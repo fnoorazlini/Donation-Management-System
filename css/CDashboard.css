@@ -1,0 +1,63 @@
+
+/*================================== content ==========================================*/
+
+.dashboard-content {
+    padding: 20px;
+}
+
+.dashboard-content h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.metrics-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.metric-box {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    animation: slideIn 1s forwards;
+}
+
+.metric-box i {
+    color: #757b5f;
+}
+
+.metric-box h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.metric-box p {
+    font-size: 2em;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.chart-container {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    animation: slideIn 1s forwards;
+}
+
+/* Slide-in animation for metric boxes and chart */
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

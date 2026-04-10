@@ -1,0 +1,93 @@
+
+
+/*=======================================content================================================*/
+
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1s forwards;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #deebab;
+    color: black;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button {
+    background-color: #deebab;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    border: 1px solid transparent;
+}
+
+.delete-btn {
+    background-color: #d9534f;
+    border-color: #d43f3a;
+    margin-right: 5px;
+}
+
+.delete-btn:hover {
+    background-color: #c9302c;
+}
+
+.view-btn {
+    background-color: #0275d8;
+    border-color: #01549b;
+}
+
+.view-btn:hover {
+    background-color: #025aa5;
+}
+
+button i {
+    margin-right: 5px;
+}
+
+/* Slide-in animation for metric boxes and chart */
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,123 @@
+
+
+/* ==================================== content ============================================*/
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1s forwards;
+    position: relative; /* Added to enable absolute positioning of the button */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.add-donation-btn {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    float: right; /* Align the button to the right */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #deebab;
+    color: black;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Styles for the form */
+#addDonationForm {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select {
+    padding: 8px;
+    margin-bottom: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+/* Add this CSS for the icon-only action icons */
+.action-icons {
+    display: flex;
+    align-items: center;
+}
+
+.action-icons i {
+    margin-right: 10px; /* Adjust spacing between icons */
+    cursor: pointer;
+    color: #333; /* Default color for icons */
+    font-size: 20px; /* Adjust icon size as needed */
+}
+
+.action-icons i:hover.fa-edit {
+    color: #0067f8; /* Default hover color (Update icon) */
+}
+
+.action-icons i:hover.fa-trash-alt {
+    color: red; /* Hover color for Delete icon */
+}
+
+
+/* Slide-in animation for metric boxes and chart */
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
